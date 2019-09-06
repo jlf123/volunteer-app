@@ -1,0 +1,39 @@
+.signout {
+    height: 100vh;
+    min-width: 100%;
+    background-color: #3d61ad;
+    padding: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .login__toolbar {
+        width: 100%;
+    }
+
+    &__spinner-label {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-icon {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: white;
+    border-bottom-color: white;
+    animation: spinner 0.8s ease infinite;
+}

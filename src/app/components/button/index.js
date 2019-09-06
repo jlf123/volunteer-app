@@ -1,0 +1,1 @@
+export { LagoButton } from './button';
