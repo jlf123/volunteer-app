@@ -10,7 +10,7 @@ export const LandingPage = () => (
             <div className="landing__logo">
                 <LarkspurIcon />
             </div>
-            <div className="landing__buttons">
+            <div className="landing__buttons" data-testid="landing-button-group">
                 <LagoButton>
                     <Link to="/signout/">Sign Out</Link>
                 </LagoButton>

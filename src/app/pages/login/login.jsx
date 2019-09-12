@@ -100,7 +100,10 @@ export const LoginPage = withRouter(({ history }) => {
     return (
         <div className={containerClassNames.join(' ')}>
             <div className="login">
-                <div className="login__toolbar">
+                <div
+                    className="login__toolbar"
+                    data-testid="login-toolbar-to-events"
+                >
                     <h1 className="login__title">Enter your name</h1>
                     <LagoButton
                         type="arrow"
@@ -110,7 +113,7 @@ export const LoginPage = withRouter(({ history }) => {
                         Select Event
                     </LagoButton>
                 </div>
-                <div className="login__input">
+                <div className="login__input" data-testid="login-name">
                     <LagoInput
                         placeholder="Enter your name..."
                         items={filteredVolunteers}
@@ -124,7 +127,10 @@ export const LoginPage = withRouter(({ history }) => {
             </div>
             <div className="line" />
             <div className="login">
-                <div className="login__toolbar">
+                <div
+                    className="login__toolbar"
+                    data-testid="login-toolbar-to-confirmation"
+                >
                     <h1 className="login__title">
                         What are you volunteering for?
                     </h1>
@@ -133,6 +139,7 @@ export const LoginPage = withRouter(({ history }) => {
                         <LagoButton
                             type="arrow"
                             arrowDirection="right"
+                            data-testid="to-signin-icon"
                             onClick={() =>
                                 history.push({
                                     pathname: '/confirmation/',
@@ -147,7 +154,7 @@ export const LoginPage = withRouter(({ history }) => {
                         </LagoButton>
                     )}
                 </div>
-                <div className="login__input">
+                <div className="login__input" data-testid="login-event">
                     <LagoInput
                         placeholder="Enter what you're here for..."
                         items={filteredEvents}

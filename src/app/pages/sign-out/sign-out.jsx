@@ -51,7 +51,7 @@ export const SignOutPage = withRouter(({ history }) => {
             )}{' '}
             {!isSigningOut && !successfullySignedOut && (
                 <React.Fragment>
-                    <div className="login__toolbar">
+                    <div className="login__toolbar" data-testid="signout-toolbar">
                         <h1 className="login__title">
                             Enter your name to sign out
                         </h1>
@@ -73,7 +73,7 @@ export const SignOutPage = withRouter(({ history }) => {
                             </LagoButton>
                         )}
                     </div>
-                    <div className="login__input">
+                    <div className="login__input" data-testid="signout-name">
                         <LagoInput
                             placeholder="Enter your name..."
                             items={filteredVolunteers}

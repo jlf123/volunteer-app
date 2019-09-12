@@ -3,7 +3,7 @@ const getAllDocuments = ({ type, db, select }) => async (req, res) => {
     if (select) {
         query = query.select(select);
     }
-    const { docs, empty: isEmpty } = await query.get({ source: 'cache' });
+    const { docs, empty: isEmpty } = await query.get();
 
     const data = docs.map(doc => ({
         id: doc.id,
