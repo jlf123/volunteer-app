@@ -24,8 +24,8 @@ export const ConfirmationPage = withRouter(
                 <div className="confirmation__icon">
                     <i className="fas fa-check-circle" />
                 </div>
-                <h1>{user.label ? user.label : user}</h1>
-                <div>
+                <h1 data-testid="confirmation-name">{user.label ? user.label : user}</h1>
+                <div data-testid="confirmation-event-and-time">
                     {event.label} <br /> at <br /> {Moment().format('hh:mm a')}
                 </div>
             </div>
