@@ -8,6 +8,7 @@ const path = require('path');
 const { signOut, signIn, search, getAllDocuments } = require('./');
 const serviceAccount = require('./firebase-account-key.json');
 
+// this is only used for local development
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
