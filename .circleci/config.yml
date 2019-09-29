@@ -2,12 +2,17 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2
+# to use CircleCI orbs need to use version >= 2.1
+version: 2.1
+orbs:
+  # use Cypress orb from CircleCI registry
+  cypress: cypress-io/cypress@1.8.0
 jobs:
   build:
+    executor: cypress/base-10
     docker:
       # specify the version you desire here
-      - image: cypress/browsers:node10.16.0-chrome76
+      - image: circleci/node:10.12
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
