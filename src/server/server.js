@@ -2,9 +2,12 @@ const express = require('express');
 const app = express();
 const firebase = require('firebase');
 const admin = require('firebase-admin');
-const serviceAccount = require('../../firebase-account-key.json');
 const bodyParser = require('body-parser');
+const fs = require('fs');
+const path = require('path');
 const { signOut, signIn, search, getAllDocuments } = require('./');
+const serviceAccount = require('./firebase-account-key.json');
+
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)

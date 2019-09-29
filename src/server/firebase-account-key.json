@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "larkspur-volunteer-dev",
+    "private_key_id": "2bc9be1c689b2f86d09173978c3c8cb60d9501c7",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDcULg85g6xT3LO\nIJeW3yX7aw+RWPusIW+lV77bH3lokVRePsSrGeOZFOvzcJcMIJHME6hQ8C4mDrnW\nunPap0n9aIke36PqbkjMgyXEi84opEycR4fn9rArHYoyasOzbf5eTTR0JzYox/Rr\nL4v2wKAxBtVO4Ljkvilro8OMtRXrfeD76GRHL4Cfg9UhaU5PdApbgXnC4rz/tiyy\nPwWzKhUTRzHzPG2BelCit/HQB8DcR2sBp+hPLxVA46SzzKoCuqqcNrpzwUFe9y8q\nZ81SfmcMEJHgP8GN9/9D/QdIIfSY/a7vzE8ZiiZOK/AG/tLEqzLD3dYst5ZW0j5n\n1PouSWWDAgMBAAECggEAByNTtMq8syCggZkrZXykCGShmSie5CbOgow4kh+PmW8L\n+A8POX6Z5yh3CejInAtPbfiSaCeVTIUG9F66HjLJV5J+ztHux6D8btPY8hNC11eW\nESzSycCDrgHuVk/V41xZn3M06IZ/X2GLGRCYok1UuKyWAKY7Qf3/QuOIFGj8OtLx\nK9kJ8nyEZSWhkimFvJOHXnssamWoh28KaD0IKp2vUAPUtukvjYe9D2V3wR6EuUxo\nFyWllyXLKucyogTDH/KdeVJae4Czv50mjQLNilakkQHHMYnzZ70NgVJde/SdPAic\ngkJGDTFczPKNwNUxHZ0BE8q7VvML+5Q7VxeUo2YeEQKBgQD6nYcjzmAe5/HyqyH3\nEi94+qKhbjY7Q3OG4q2fIquMD1+CPC3pWdBm3D6nJhjOF1FbuH7VB9MBxbrHceHi\np0saToCsVV7+6s2spYrp30fzDDrGum0LDgH4vvtQldF910WFPN2j0waSet6hJb0G\nucpDxxkReYO03PuzKEwUoNnXhQKBgQDhDIfwEm85pkkjMLOKRETQy2J5dSMckfQj\nhtBylUEiz+yU8Md81a86LQ0gZS2pPyiHlU8VwUj9IfpNPIZAE+6MX2oz/lTYuF++\ninyca44I+s9ra8YPbxtpVnvzLnwLnePSi8Zc5F09D74nKtk7q0vU7gCXzs5ApZ4W\nyIvnM+KjZwKBgDLMY2walNku4pfxoDzYbs7y3qwiDtQMZApfQBoViPgm1ZEsaZH3\nJory8bAnxLdhephA2VSM9XRSg/2RU9wBVPPMHcDQvSSmq3HnTDUDkS3uuKs3dorb\nGAM3kvFOrNv5GppbMAHY8GgYh6/aWmpWlm0OmkI0g0HR2SMDdAhqYj2RAoGBANXg\n3uBd5K7ZRfDXvAnPz8bPRAtCM9hXLbsFyNzc1EaNbL4wBqaxPhL/9dWv0rFigNY6\nJCr8wq0vuX3l44DKcI+froMzVteQgg3H952A6j/GfZINnvHUGi0GME5xAxrXN0lF\n5YMq1SHO8Fyw8DsxFKSMfKvJs2LlA1WLyso0GVRJAoGBAISdDy7URFBS/x8UZWC+\nHi/vQhJkzPgwqUthJERRiPNqfA9NePFHujuCSGvzhrRpVTJFqppn3ksJkYEV7WLT\nWy7knP/kKg5xW7LKUwC2sfnRtK/zqIIYGDRQQZw1gJUBPDHxexKjIz3w77mA27Op\n3ebcigtwhTyF8LyaVQmaAO89\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-uk7ns@larkspur-volunteer-dev.iam.gserviceaccount.com",
+    "client_id": "106139498554907114567",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-uk7ns%40larkspur-volunteer-dev.iam.gserviceaccount.com"
+  }
+  
