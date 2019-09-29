@@ -9,7 +9,7 @@ orbs:
   cypress: cypress-io/cypress@1.8.0
 jobs:
   build:
-    executor: cypress/base-10
+    executor: cypress/browsers-chrome69
     docker:
       # specify the version you desire here
       - image: circleci/node:10.12
