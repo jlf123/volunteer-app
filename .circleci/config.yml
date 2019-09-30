@@ -42,4 +42,5 @@ jobs:
       # if test pass then deploy
       - run: firebase deploy
 
-      - store_artifacts: true
+      - store_artifacts:
+          path: /tmp/artifacts
