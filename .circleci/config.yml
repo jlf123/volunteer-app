@@ -16,8 +16,6 @@ jobs:
 
     working_directory: ~/repo
 
-    store_artifacts: true
-
     steps:
       - checkout
 
@@ -43,3 +41,5 @@ jobs:
 
       # if test pass then deploy
       - run: firebase deploy
+
+      - store_artifacts: true
