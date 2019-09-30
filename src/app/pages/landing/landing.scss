@@ -2,13 +2,12 @@
     position: relative;
     &::before {
         content: '';
-        background: url('../../assets/school.jpg');
+        background: url('../../assets/lightning.jpg');
         background-size: cover;
         height: 100%;
         width: 100%;
         padding: 50px;
         position: absolute;
-        filter: grayscale(100%);
     }
 
     &__content {
