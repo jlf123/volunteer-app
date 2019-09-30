@@ -44,6 +44,7 @@ module.exports = env => {
         plugins: [
             new HtmlWebPackPlugin({
                 title: 'Volunteer App',
+                favicon: path.resolve(__dirname, './favicon.ico'),
                 template: path.resolve(__dirname, './src/app/index.html')
             }),
             new webpack.DefinePlugin({
