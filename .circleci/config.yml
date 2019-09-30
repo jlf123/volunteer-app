@@ -41,7 +41,7 @@ jobs:
       - run: yarn test
 
       # if test pass then deploy
-      - run: yarn deploy
+      - run: if [ "${CIRCLE_BRANCH}" == "master" ]; then yarn deploy; fi
 
       - store_artifacts:
           path: /cypress/videos
