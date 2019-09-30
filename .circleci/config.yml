@@ -16,6 +16,8 @@ jobs:
 
     working_directory: ~/repo
 
+    store_artifacts: true
+
     steps:
       - checkout
 
