@@ -10,7 +10,7 @@
         "build": "./node_modules/.bin/webpack --mode=production --env.production",
         "dev:build": "./node_modules/.bin/webpack -d --watch --mode=development --env.production=false",
         "dev:start": "concurrently 'yarn dev:build' 'sleep 5 && source env.sh && ./node_modules/.bin/nodemon --watch src/server/server.js --inspect=127.0.0.1:9229 src/server/server.js'",
-        "deploy": "./node_modules/.bin/firebase deploy"
+        "deploy": "./node_modules/.bin/firebase use prod && ./node_modules/.bin/firebase deploy"
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
