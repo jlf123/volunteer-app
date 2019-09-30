@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "larkspur-volunteer"
+    "default": "larkspur-volunteer",
+    "dev": "larkspur-volunteer-dev",
+    "prod": "larkspur-volunteer"
   }
 }

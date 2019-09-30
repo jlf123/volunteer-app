@@ -1,3 +1,5 @@
 node_modules
 dist
-firebase-account-key.json
+env.sh
+cypress/videos
+cypress/screenshots

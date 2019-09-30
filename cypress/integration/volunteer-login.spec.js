@@ -26,7 +26,7 @@ describe('Volunteer Login', () => {
     });
 
     it('should autocomplete while the user is typing the event they are volunteering for', () => {
-        cy.wait(100);
+        cy.wait(1000);
         cy.findByTestId('login-event').within(() => {
             cy.get('input').type('Test');
         });
@@ -69,7 +69,7 @@ describe('Volunteer signout', () => {
     });
 
     it('should autocomplete while the user is typing the event they are volunteering for', () => {
-        cy.wait(100);
+        cy.wait(1000);
         cy.findByTestId('signout-name').within(() => {
             cy.get('input').type('Test');
         });

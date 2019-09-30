@@ -2,12 +2,12 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:10.12
+      - image: cypress/browsers:node10.16.0-chrome77
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -26,19 +26,22 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: yarn install
+      - run: yarn install --frozen-lockfile
       - run: cd functions && yarn install
 
       - save_cache:
           paths:
             - node_modules
+            - /root/.cache/
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: yarn build
-      - run: yarn start
 
       # run tests!
       - run: yarn test
 
       # if test pass then deploy
-      - run: firebase deploy
+      - run: if [ "${CIRCLE_BRANCH}" == "master" ]; then yarn deploy; fi
+
+      - store_artifacts:
+          path: /cypress/videos
