@@ -6,10 +6,12 @@
     border-radius: 7px;
     color: white;
     display: inline-flex;
+    align-items: center;
     font-size: 16px;
     transition: transform 0.25s, box-shadow 0.25s;
     user-select: none;
     box-sizing: initial;
+    white-space: nowrap;
 
     a {
         color: inherit;
@@ -29,8 +31,6 @@
 
 .lago__arrow {
     border-radius: 0;
-    padding-top: 10px;
-    position: relative;
     font-size: 20px;
     border: none;
 

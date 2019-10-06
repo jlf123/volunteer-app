@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import LagoDropdown from '../dropdown';
 import './input.scss';
 
@@ -12,6 +12,13 @@ export const LagoInput = ({
     const [showDropdown, setShowDropdown] = useState(false);
     const [selectedOption, setSelectedOption] = useState();
     const [inputValue, setInputValue] = useState('');
+    const inputRef = useRef(null);
+    useEffect(() => {
+        inputRef.current.onfocus = () => {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+        };
+    });
     const classNames = ['lago__input'];
     if (isFocused) {
         classNames.push('lago__input--focused');
@@ -20,6 +27,7 @@ export const LagoInput = ({
         <div className={classNames.join(' ')}>
             <input
                 type="text"
+                ref={inputRef}
                 onChange={e => {
                     if (
                         autoSelect &&
