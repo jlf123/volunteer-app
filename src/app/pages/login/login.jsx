@@ -110,12 +110,12 @@ export const LoginPage = withRouter(({ history }) => {
                         arrowDirection="right"
                         onClick={() => setNextSlide(true)}
                     >
-                        Select Event
+                        Events
                     </LagoButton>
                 </div>
                 <div className="login__input" data-testid="login-name">
                     <LagoInput
-                        placeholder="Enter your name..."
+                        placeholder="Enter your first and last name..."
                         items={filteredVolunteers}
                         autoSelect
                         onChange={value => {

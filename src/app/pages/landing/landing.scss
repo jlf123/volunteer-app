@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .landing {
     position: relative;
     &::before {
@@ -25,7 +27,12 @@
 
         svg {
             position: relative;
-            transform: translateX(-80px);
+            left: -15%;
+
+            @media #{$media-phone} {
+                left: -10%;
+                transform: scale(.8);
+            }
         }
     }
 
