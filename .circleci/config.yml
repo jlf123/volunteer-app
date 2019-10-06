@@ -44,4 +44,4 @@ jobs:
       - run: if [ "${CIRCLE_BRANCH}" == "master" ]; then yarn deploy; fi
 
       - store_artifacts:
-          path: /cypress/videos
+          path: /root/repo/cypress/videos
