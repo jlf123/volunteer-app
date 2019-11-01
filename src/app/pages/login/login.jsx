@@ -73,7 +73,7 @@ export const LoginPage = withRouter(({ history }) => {
         if (inputValue.length < 3) return;
         setFilteredVolunteers(
             filter(volunteers, o =>
-                new RegExp(inputValue).test(o.firstName + ' ' + o.lastName)
+                new RegExp(inputValue, 'i').test(o.firstName + ' ' + o.lastName)
             ).map(volunteer => ({
                 value: volunteer.id,
                 label: volunteer.firstName + ' ' + volunteer.lastName
@@ -83,7 +83,7 @@ export const LoginPage = withRouter(({ history }) => {
     useEffect(() => {
         setFilteredEvents(
             filter(availableEvents, o =>
-                new RegExp(eventInputValue).test(o.eventName)
+                new RegExp(eventInputValue, 'i').test(o.eventName)
             ).map(event => ({
                 value: event.id,
                 label: event.eventName

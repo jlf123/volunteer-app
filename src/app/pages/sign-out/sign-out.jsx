@@ -27,7 +27,7 @@ export const SignOutPage = withRouter(({ history }) => {
         if (inputValue.length < 3) return;
         setFilteredVolunteers(
             filter(volunteers, o =>
-                new RegExp(inputValue).test(o.firstName + ' ' + o.lastName)
+                new RegExp(inputValue, 'i').test(o.firstName + ' ' + o.lastName)
             ).map(volunteer => ({
                 value: volunteer.id,
                 label: volunteer.firstName + ' ' + volunteer.lastName
